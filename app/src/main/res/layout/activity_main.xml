@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/salestitle"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/sales_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:layout_marginBottom="-78dp"
+        android:gravity="center_horizontal"
+        android:text="Sajii Videos"
+        android:textColor="@color/colorAccent"
+        android:textSize="35dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salestitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/backwithborder"
+        android:hint="Enter user name"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/backwithborder"
+        android:hint="Enter Date of Birth"
+        android:inputType="date"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/backwithborder"
+        android:hint="Enter Address"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/backwithborder"
+        android:hint="Enter NIC (Ex: 000000000v)"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginBottom="23dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selectGenre"
+            android:layout_width="343dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/backwithborder"
+            android:gravity="center"
+            android:text="Select your Interest Category"
+            android:textColor="#0C0C0C"
+            android:textSize="22dp"
+            tools:ignore="InvalidId">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="104dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/selectGenre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Comedy" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectGenre"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Action" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectGenre"
+
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_toStartOf="@+id/checkBox2"
+            android:layout_toLeftOf="@+id/checkBox2"
+            android:layout_toEndOf="@+id/checkBox3"
+            android:layout_toRightOf="@+id/checkBox3"
+            android:text="Fantasy" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectGenre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="59dp"
+            android:text="Horror" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectGenre"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Romance" />
+
+        <Button
+            android:id="@+id/Submit_button"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp"
+            android:layout_marginBottom="17dp"
+            android:backgroundTint="@color/colorBackground"
+            android:backgroundTintMode="multiply"
+            android:fontFamily="monospace"
+            android:text="S u b m i t"
+            android:textColor="@android:color/primary_text_light_nodisable" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next_button"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+
+        android:layout_below="@+id/sales_price1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/backwithborder"
+        android:gravity="center"
+        android:text="Select sex"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="182dp"
+        android:layout_height="104dp"
+
+        android:layout_below="@+id/sales_price1"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/backwithborder"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="4dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="  Male"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="   Female"
+
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/next_button2"
+        android:layout_width="197dp"
+        android:layout_height="44dp"
+
+
+        android:layout_below="@+id/next_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/backwithborder"
+        android:gravity="center"
+        android:text="Select Age group"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+
+        android:layout_below="@+id/next_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/backwithborder"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>
